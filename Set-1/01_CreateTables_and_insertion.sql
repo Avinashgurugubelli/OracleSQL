@@ -15,7 +15,7 @@ CREATE TABLE COMPUTER_DETAILS(
     Id integer not NULL primary KEY,
     make VARCHAR(20) not NULL,
     model VARCHAR(20) not null UNIQUE,
-    mYear date not NULL
+    mYear integer not NULL
 );
 
 create TABLE EMPLOYEE_DETAILS(

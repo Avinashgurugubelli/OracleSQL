@@ -4,7 +4,7 @@ Subquery in SELECT and FROM clause are rarely used. Subqueries in WHERE and HAVI
 */
 select * from employee_details;
 
--- A subquery in SELECT clause can return a single value (single row and single column). It should be provided an alias name
+-- A subquery in SELECT clause can return a single value (single row and single column). better to provide an alias name
 select id, first_name,last_name ,(select avg(salary) from employee_details) from employee_details;
 
 -- A subquery in FROM clause is also called an Inline View and it should be aliased in the query
